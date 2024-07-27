@@ -10,7 +10,7 @@
         <style>
             .content {
                 position: absolute;
-                top: 40%;
+                top: 75%;
                 left: 40%;
                 transform: translate(-50%, -50%);
                 /*border: 1px solid black;&*/
@@ -65,6 +65,39 @@
             .right-container {
                 width: 90%;
             }
+
+            .project-box{
+                background-color: gray;
+                padding: 20px;
+                border-radius: 5px;
+                transition: box-shadow 0.3s ease;
+                width: 48%;
+                height: 400px;
+                margin-bottom: 20px;
+                position: relative;
+            }
+
+            .project-box .links{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .project-box .links a{
+                color: white;
+                margin-left : 5px;
+            }
+            .project-box:hover {
+                transform:  translateZ(10px);
+            }
+
+            .project-box-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+
+
 
         </style>
     </head>
@@ -136,7 +169,73 @@
 
                 <h2>Projects</h2>
 
-                
+                <br>
+
+                <div class = "project-box-container">
+                    <div class = "project-box">
+                        <p class=" text-white p-4">SentimentAnalysisCapstone</p>
+                        <div class = "links">
+                            <a href="https://github.com/winstondmasi/SentimentAnalysisCapstone"><span class = "underline"></span>GitHub</a>
+                        </div>
+
+                        <p class = "text-white p-1">
+                            A web application that analyzes and visualizes the sentiment of tweets over time. It leverages advanced sentiment analysis techniques and data visualization to provide users with valuable insights into the emotional landscape of Twitter.
+                        </p>
+                        <br><br>
+                        <p class="text-white p-1">
+                            Python(Django), JavaScript, SQLite, HTML, CSS
+                        </p>
+                    </div>
+
+                    <div class = "project-box">
+                        <div class = "links">
+                            <a href="https://github.com/winstondmasi/Oro"><span class = "underline"></span>GitHub</a>
+                        </div>
+                        <p class=" text-white p-4"> Oro</p>
+
+                        <p class = "text-white p-4">
+                            A RESTful API using Flask in the Backend that automatically summarizes YouTube videos with a
+                            BERT language model, leveraging PyTorch for natural language processing that interacts with the Flask backend, providing users with
+                            summarized content and generated flashcards.
+                        </p>
+                        <br>
+                        <p class="text-white p-1">
+                            Python(Flask), React.js, PyTorch
+                        </p>
+                    </div>
+
+                    <div class = "project-box">
+
+                        <div class = "links">
+                            <a href="https://github.com/winstondmasi/scar_screenshots"><span class = "underline"></span>GitHub</a>
+                        </div>
+
+                        <p class=" text-white p-4"> ScreenShots Scar</p>
+
+                        <p class = "text-white p-4">
+                            Screenshot Cleanup Automation Routine (scar) : Python script that gets rid of all my old screenshots I leave lying around on my desktop and organize them for me in labeled folders
+                        </p>
+                        <br>
+                        <p class="text-white p-1">
+                            Python, PyTorch, SCIKIT-learn, and numpy
+                        </p>
+                    </div>
+
+                    <div class = "project-box">
+                        <div class = "links">
+                            <a href="https://github.com/winstondmasi/sockets"><span class = "underline">GitHub</a>
+                        </div>
+                        <p class=" text-white p-4"> Virtual Cafe</p>
+
+                        <p class = "text-white p-4">
+                            The Virtual Café is a Java-based client-server application that simulates a café environment. Customers can connect to a virtual barista server, authenticate themselves, and place orders for tea and coffee through simple text commands.
+                        </p>
+                        <br>
+                        <p class="text-white p-1">
+                            Java
+                        </p>
+                    </div>
+                </div>
             </sectiom>
         </div>
     </body>
